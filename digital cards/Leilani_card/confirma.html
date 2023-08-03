@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Birthday Interactive Card</title>
+  <meta name="description" content="es">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/mediaqueries.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+
+  <audio id="sonido_btn" src="/img/music/button.mp3" autostart="false"></audio>
+  <audio src="img/music/bajo_el_mar_i4.mp3" autoplay="autoplay" loop="loop"></audio>
+</head>
+
+<body>
+  
+    <div class="contenedor-card" id="confirmar">
+            <div class="main-title" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+            data-aos-offset="0"><img src="img/title.png" alt="titulo"></div>
+            <p class="txt2" data-aos="fade-zoom-in" data-aos-delay="700"> <span>Te</span> esperamos</p>
+            <p class="sub3" data-aos="fade-down" data-aos-delay="800"> Favor de confirmar asistencia </p>
+            <a class="btn-confirm" href="https://wa.me/528332322629/?text=Confirmo%20mi%20asistencia%20al%20festejo%20de%20Lailani." target="_blank" data-aos="fade-down" data-aos-delay="950">
+              <img src="img/verified_icon.png" alt="icon-check">
+              <p>Asistiré</p>
+            </a>
+            <a class="btn_back" href="date-location.html" target="_self" onclick="play('sonido_btn')"><img src="img/btn_back.png" alt="continuar"></a>
+            <div class="mini-overlay"></div>
+    </div>
+   
+  <script src="js/vendor/modernizr-3.12.0.min.js"></script>
+  <script src="js/vendor/jquery-3.7.0.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

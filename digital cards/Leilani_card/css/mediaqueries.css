@@ -1,0 +1,250 @@
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+/* Smarth phones hasta 280 */
+  @media screen and (min-width: 17.5em){
+    .contenedor-card{
+        box-shadow: none;
+      }
+
+                  .main-title img{
+                    width: 55%;
+                  }
+
+            #img_siren{
+              bottom: 8%;
+            }
+                  #img_siren img{
+                    width:85%;
+                  }
+
+            .txt-invite{
+              width: 80%;
+              font-size:25px;
+              bottom: 15%;
+              line-height: 28px;
+            }
+           
+
+    .sub2{  
+            font-size:1.5rem;
+            top: 6%;
+            letter-spacing: 3px;
+          }
+          .title2{
+              font-size:6rem;
+              top: 8%;
+          }
+          #birthday{
+            top:18%;
+          }
+              #birthday img{
+                width: 85%;
+              }
+
+        .txt-welcome{
+            width: 90%;
+            font-size:16px;
+            bottom: 15%;
+            line-height: 18px;
+}
+
+
+.content-location{
+  top: 13%;
+}
+
+.date{
+  font-size: 130px;
+  top: 43%;
+  line-height: 60px;
+}
+    .date span{
+      font-size: 55px;
+    }
+.hour{
+  font-size: 45px;
+  bottom: 22%;
+}
+
+.txt-sugerencia{
+  bottom: 18%;
+  font-size: 14px;
+}
+
+    
+  }
+
+
+   /* Desktops hasta 1280px */
+   @media screen and (min-width: 80em){
+    .contenedor-card{
+        box-shadow: 5px 2px 20px rgba(0,0,0,0.3);
+      }
+                 .main-title img{
+                    width:70%;
+                  }
+
+            #img_siren{
+              bottom: 15%;
+            }
+                  #img_siren img{
+                    width:95%;
+                  }
+
+            .txt-invite{
+              width: 85%;
+              font-size:30px;
+              bottom: 18%;
+              line-height: 32px;
+            }
+           
+
+    .sub2{  
+            font-size:35px;
+            top: 6%;
+            letter-spacing: 3px;
+          }
+          .title2{
+              font-size:180px;
+              top: 8%;
+          }
+          #birthday{
+            top:23%;
+          }
+              #birthday img{
+                width: 95%;
+              }
+
+        .txt-welcome{
+            width: 75%;
+            font-size:18px;
+            bottom: 15%;
+            line-height: 20px;
+}
+
+
+.content-location{
+  top: 10%;
+}
+
+
+.date{
+  font-size: 180px;
+  top: 40%;
+  line-height: 80px;
+}
+    .date span{
+      font-size: 75px;
+    }
+.hour{
+  font-size: 50px;
+  bottom: 30%;
+}
+
+.txt-sugerencia{
+  bottom: 20%;
+  font-size: 16px;
+}
+
+
+   }
+
+
+
+
+
+
+
+
+
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+ 
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+   @media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
