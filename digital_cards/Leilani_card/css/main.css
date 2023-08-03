@@ -193,7 +193,7 @@ body {
 
 
 #second_screen{
-  background: url(/img/bg_ocean2.png)no-repeat bottom center;
+  background: url(digital_cards/Leilani_card/img/bg_ocean2.png)no-repeat bottom center;
   background-size: cover;
 }
 
@@ -299,7 +299,7 @@ body {
 }
 
 #confirmar{
-  background: url(/img/bg_confirm.png)no-repeat top center;
+  background: url(./img/bg_confirm.png)no-repeat top center;
   background-size: cover;
 }
 #confirmar .main-title {
