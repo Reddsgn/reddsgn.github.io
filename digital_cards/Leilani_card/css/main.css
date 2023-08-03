@@ -1,8 +1,8 @@
 @font-face {
   font-family: 'Mermaid';
-  src:  url('./fonts/Mermaid-Bold.eot') format('embedded-opentype'),
-    url('./fonts/Mermaid-Bold.ttf') format('truetype'),
-    url('./fonts/Mermaid-Bold.woff') format('woff');
+  src:  url('../fonts/Mermaid-Bold.eot') format('embedded-opentype'),
+    url('../fonts/Mermaid-Bold.ttf') format('truetype'),
+    url('../fonts/Mermaid-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: block;
@@ -10,9 +10,9 @@
 
 @font-face {
   font-family: 'Mermaid-Swash';
-  src:  url('./fonts/MermaidSwashCaps-Bold.eot') format('embedded-opentype'),
-    url('./fonts/MermaidSwashCaps-Bold.ttf') format('truetype'),
-    url('./fonts/MermaidSwashCaps-Bold.woff') format('woff');
+  src:  url('../fonts/MermaidSwashCaps-Bold.eot') format('embedded-opentype'),
+    url('../fonts/MermaidSwashCaps-Bold.ttf') format('truetype'),
+    url('../fonts/MermaidSwashCaps-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: block;
@@ -110,7 +110,7 @@ body {
     justify-content: center;
   }
 .ocean_bg{
-  background: url(./img/bg_ocean.png) no-repeat;
+  background: url(../img/bg_ocean.png) no-repeat;
   background-size: cover;
   height: 100vh;
   overflow: hidden;
