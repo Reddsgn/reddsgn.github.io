@@ -111,19 +111,6 @@ body {
   overflow: hidden;
   justify-content: center;
 }
-/*body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  min-height: 100vh;
-  margin: 0;
-
-  background: hsl(0 0% 98%);
-  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', sans-serif;
-}*/
-
-
 
 /* Container slider */
 /* ========================================================================== */
@@ -213,7 +200,7 @@ body {
   text-align: center;
   letter-spacing: 2px;
   overflow: hidden;
-  top: 73%;
+  top: 71%;
   margin: auto;
   left: 0;
   right:0;
