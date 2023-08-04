@@ -131,7 +131,6 @@ body {
   max-width: 480px;
   width:100%;
   height:100vh;
-  min-height: 800px;
   border-radius: 12px;
   padding: 20px;
   padding-bottom: 40px;
@@ -197,7 +196,7 @@ body {
   letter-spacing: 3px;
   line-height:90px;
   overflow: hidden;
-  top: 15%;
+  top:0;
   margin: auto;
   left: 0;
   right: 0;
@@ -214,7 +213,7 @@ body {
   text-align: center;
   letter-spacing: 2px;
   overflow: hidden;
-  top: 75%;
+  top: 73%;
   margin: auto;
   left: 0;
   right:0;
@@ -376,7 +375,6 @@ label {
 
   position: relative;
   z-index: 10;
-  top: -80px;
 }
 
 label:last-child {
