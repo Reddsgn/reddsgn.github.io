@@ -11,7 +11,6 @@
   <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/mediaqueries.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="fonts/stylesheet.css">
 
@@ -21,53 +20,60 @@
 
 <body>
 
-<div class="conteiner-slider">
 
-  <input type="radio" name="nav" id="card-1" checked>
-  <label for="card-1"></label>
-  <div class="content-inner">
-    <h2 class="txt-med" data-aos="fade-zoom-in" data-aos-delay="150" >Acompáñame a celebrar mi increíble cumpleaños</h2>
-    <img src="img/bg_1.png" alt="title image">
+  <div class="CSSgal">
+
+    <!-- Don't wrap targets in parent -->
+    <s id="s1"></s> 
+    <s id="s2"></s>
+    <s id="s3"></s>
+    <s id="s4"></s>
+  
+    <div class="slider">
+      <div id="one">
+        <h2 data-aos="fade-zoom-in" data-aos-delay="150" >Acompáñame a celebrar mi increíble cumpleaños</h2>
+      </div>
+      <div id="two">
+        <p class="txt-event" data-aos="fade-down" data-aos-delay="350" >Número <br><span class="number">6</span></p>
+        <p class="txt2" data-aos="fade-zoom-in" data-aos-delay="550" >Porque existen momentos en la vida que son especiales por si solos pero compartirlos con las personas que quiero los convierte en momentos inolvidables.</p>
+      </div>
+      <div id="three">
+        <a  href="https://goo.gl/maps/mHemoZ3ybLdm91Cn6" target="_blank" class="content-location" data-aos="fade-zoom-in" data-aos-delay="600">
+          <img src="img/location-marine.png" alt="icono ubicacion">
+          <p class="place">Increibowl</p>
+          <p class="location">Calzada San Pedro #48 
+            <br>
+            Col. Arenal, Tampico</p>
+          </a>
+          <p class="date" data-aos="fade-zoom-in" data-aos-delay="700">17 <br><span> Agosto</span></p>
+          <p class="hour" data-aos="fade-down" data-aos-delay="800"> 17:00 Hrs. </p>
+          <p class="txt-sugerencia" data-aos="fade-left" data-aos-delay="950">Sugerencia de regalo: Juguetes</p>
+      </div>
+      <div id="four">
+        <p class="txt3" data-aos="fade-zoom-in" data-aos-delay="1000"> <span>Te</span> esperamos</p>
+        <p class="sub3" data-aos="fade-down" data-aos-delay="1350"> Favor de confirmar asistencia </p>
+        <a class="btn-confirm" href="https://wa.me/528332322629/?text=Confirmo%20mi%20asistencia%20al%20festejo%20de%20Leilani." target="_blank"  onclick="play('sonido_btn')">
+          <img src="img/verified_icon.png" alt="icon-check">
+          <p>Asistiré</p>
+        </a>
+      </div>
+    </div>
+    
+    <div class="prevNext">
+      <div><a href="#s4"></a><a href="#s2"></a></div>
+      <div><a href="#s1"></a><a href="#s3"></a></div>
+      <div><a href="#s2"></a><a href="#s4"></a></div>
+      <div><a href="#s3"></a><a href="#s1"></a></div>
+    </div>
+  
+    <div class="bullets">
+      <a href="#s1"></a>
+      <a href="#s2"></a>
+      <a href="#s3"></a>
+      <a href="#s4"></a>
+    </div>
+  
   </div>
-
-  <input type="radio" name="nav" id="card-2">
-  <label for="card-2"></label>
-  <div class="content-inner">
-    <p class="txt-event" data-aos="fade-down" data-aos-delay="350" >Número <br><span class="number">6</span></p>
-    <p class="txt2" data-aos="fade-zoom-in" data-aos-delay="550" >Porque existen momentos en la vida que son especiales por si solos pero compartirlos con las personas que quiero los convierte en momentos inolvidables.</p>
-    <img src="img/bg_2.png" alt="event image">
-  </div>
-
-  <input type="radio" name="nav" id="card-3">
-  <label for="card-3"></label>
-  <div class="content-inner">
-    <a  href="https://goo.gl/maps/mHemoZ3ybLdm91Cn6" target="_blank" class="content-location" data-aos="fade-zoom-in" data-aos-delay="600">
-      <img src="img/location-marine.png" alt="icono ubicacion">
-      <p class="place">Increibowl</p>
-      <p class="location">Calzada San Pedro #48 
-        <br>
-        Col. Arenal, Tampico</p>
-      </a>
-      <p class="date" data-aos="fade-zoom-in" data-aos-delay="700">17 <br><span> Agosto</span></p>
-      <p class="hour" data-aos="fade-down" data-aos-delay="800"> 17:00 Hrs. </p>
-      <p class="txt-sugerencia" data-aos="fade-left" data-aos-delay="950">Sugerencia de regalo: Juguetes</p>
-    <img src="img/bg_3.png" alt="day image">
-  </div>
-
-  <input type="radio" name="nav" id="card-4">
-  <label for="card-4"></label>
-  <div class="content-inner">
-    <p class="txt3" data-aos="fade-zoom-in" data-aos-delay="1000"> <span>Te</span> esperamos</p>
-    <p class="sub3" data-aos="fade-down" data-aos-delay="1350"> Favor de confirmar asistencia </p>
-    <a class="btn-confirm" href="https://wa.me/528332322629/?text=Confirmo%20mi%20asistencia%20al%20festejo%20de%20Leilani." target="_blank"  onclick="play('sonido_btn')">
-      <img src="img/verified_icon.png" alt="icon-check">
-      <p>Asistiré</p>
-    </a>
-    <img src="img/bg_4.png" alt="confirma image">
-  </div>
-
-</div>
-
 
 
 

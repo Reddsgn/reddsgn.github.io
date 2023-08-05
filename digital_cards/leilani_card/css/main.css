@@ -95,6 +95,8 @@ textarea {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+	  -webkit-box-sizing: border-box;
    }
 a{
   text-decoration: none;
@@ -105,7 +107,7 @@ body {
   font-family: 'Mermaid', sans-serif; 
   font-size: 18px; 
   width: 100vw;
-  min-height: 100vh; 
+  height: 100vh; 
   color: white;
   display:flex; 
   overflow: hidden;
@@ -114,7 +116,359 @@ body {
 
 /* Container slider */
 /* ========================================================================== */
-.conteiner-slider {
+
+/*
+PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
+http://stackoverflow.com/a/34696029/383904
+*/
+
+.CSSgal {
+	position: relative;
+	overflow: hidden;
+	height:100vh;
+  width: 438px;/* Or set a fixed height */
+  background: rgb(4,24,47);
+}
+
+/* SLIDER */
+
+.CSSgal .slider {
+	height: 100%;
+	white-space: nowrap;
+	font-size: 0;
+	transition: 0.8s;
+}
+
+/* SLIDES */
+
+.CSSgal .slider > * {
+	font-size: 1rem;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+	background: none 50% no-repeat;
+	background-size: cover;
+}
+#one{
+  background: url(../img/bg_1.png) no-repeat top center;
+  background-size:cover;
+}
+#two{
+  background: url(../img/bg_2.png) no-repeat top center;
+  background-size:cover;
+}
+#three{
+  background: url(../img/bg_3.png) no-repeat top center;
+  background-size:cover;
+}
+#four{
+  background: url(../img/bg_4.png) no-repeat top center;
+  background-size:cover;
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.CSSgal .prevNext {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	width: 100%;
+	height: 0;
+}
+
+.CSSgal .prevNext > div + div {
+	visibility: hidden; /* Hide all but first P/N container */
+}
+
+.CSSgal .prevNext a {
+	background: #88FFF1;
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	line-height: 45px; /* If you want to place numbers */
+	text-align: center;
+	opacity: 0.4;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	left: 0;
+}
+.CSSgal .prevNext a:hover {
+	opacity: 1;
+}
+.CSSgal .prevNext a + a {
+	left: auto;
+	right: 0;
+}
+
+/* NAVIGATION */
+
+.CSSgal .bullets {
+	position: absolute;
+	z-index: 2;
+	bottom: 60px;
+	padding: 10px 0;
+	width: 100%;
+	text-align: center;
+}
+.CSSgal .bullets > a {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-decoration: none;
+	text-align: center;
+	background: #88FFF1;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.CSSgal .bullets > a + a {
+	background: rgba(255, 255, 255, 0.3); /* Dim all but first */
+}
+.CSSgal .bullets > a:hover {
+	background: rgba(136, 255, 241, 0.7) !important;
+}
+
+/* NAVIGATION BUTTONS */
+/* ALL: */
+.CSSgal > s:target ~ .bullets > * {
+	background: rgba(255, 255, 255, 0.3);
+}
+/* ACTIVE */
+#s1:target ~ .bullets > *:nth-child(1) {
+	background: #88FFF1;
+}
+#s2:target ~ .bullets > *:nth-child(2) {
+	background: #88FFF1;
+}
+#s3:target ~ .bullets > *:nth-child(3) {
+	background: #88FFF1;
+}
+#s4:target ~ .bullets > *:nth-child(4) {
+	background: #88FFF1;
+}
+
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.CSSgal > s:target ~ .prevNext > * {
+	visibility: hidden;
+}
+/* ACTIVE: */
+#s1:target ~ .prevNext > *:nth-child(1) {
+	visibility: visible;
+}
+#s2:target ~ .prevNext > *:nth-child(2) {
+	visibility: visible;
+}
+#s3:target ~ .prevNext > *:nth-child(3) {
+	visibility: visible;
+}
+#s4:target ~ .prevNext > *:nth-child(4) {
+	visibility: visible;
+}
+
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target ~ .slider {
+	transform: translateX(0%);
+	-webkit-transform: translateX(0%);
+}
+#s2:target ~ .slider {
+	transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
+}
+#s3:target ~ .slider {
+	transform: translateX(-200%);
+	-webkit-transform: translateX(-200%);
+}
+#s4:target ~ .slider {
+	transform: translateX(-300%);
+	-webkit-transform: translateX(-300%);
+}
+/* More slides? Add here more rules */
+
+
+.CSSgal {
+	color: #fff;
+	text-align: center;
+}
+.CSSgal .slider h2 {
+  margin: auto;
+	margin-top: 65vh;
+	letter-spacing: -0.06em;
+	word-spacing: 0.2em;
+	font-size: 1.8rem;
+  font-family: 'Mermaid-Swash'; 
+  text-align: center;
+  letter-spacing: 3px;
+  line-height: 2rem;
+  width: 80%;
+  text-shadow: 0 2px 10px rgba(4,24,47,0.3);
+}
+.CSSgal a {
+	border-radius: 50%;
+	margin: 0 3px;
+	color: rgba(0, 0, 0, 0.8);
+	text-decoration: none;
+}
+
+.CSSgal .slider .txt2 {
+  margin: auto;
+	margin-top: 37vh;
+	letter-spacing: -0.06em;
+	word-spacing: 0.2em;
+	font-size: 1.1rem;
+  font-family: 'Mermaid-Swash'; 
+  text-align: center;
+  letter-spacing: 1px;
+  line-height:1.5rem;
+  width: 90%;
+  text-shadow: 0 2px 10px rgba(4,24,47,0.3);
+}
+
+.CSSgal .slider .txt-event{
+  width: 80%;
+  margin: auto;
+	margin-top: 5vh;
+	letter-spacing: -0.06em;
+	word-spacing: 0.2em;
+	font-size: 2.2rem;
+  font-family: 'Mermaid-Swash'; 
+  text-align: center;
+  letter-spacing: 3px;
+  line-height:5.5rem;
+  text-shadow: 0 2px 10px rgba(4,24,47,0.3);
+} 
+
+.CSSgal .slider .txt-event .number{ font-size: 8rem;}
+
+.CSSgal .slider .content-location{
+  width: 65%;
+  margin: auto;
+	margin-top: 10vh;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+    .CSSgal .slider .content-location img{
+       transform: rotate(-35deg);
+       width: 50px;
+    }
+    .CSSgal .slider .content-location .place{
+      font-size: 30px;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 10px rgba(4,24,47,0.3);
+    }
+    .CSSgal .slider .content-location .location{
+      color: #04182F;
+      text-transform: uppercase;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+.CSSgal .slider .date{
+  text-align: center;
+  width: 80%;
+  font-family: 'Mermaid-Swash'; 
+  font-size:10rem;
+  line-height: 70px;
+  text-shadow: 0 2px 10px rgba(4,24,47,0.3);
+  transform: translateY(-50%);
+  margin: auto;
+  margin-top: 13vh;
+}
+.CSSgal .slider .date span{font-size: 4rem;}
+
+.CSSgal .slider .hour{
+  text-align: center;
+  font-size:2.5rem;
+  font-family: 'Mermaid-Swash'; 
+  letter-spacing: 7px;
+  color: #88FFF1;
+  text-shadow: 0 2px 10px rgba(4,24,47,0.3);
+  transform: translateY(-50%);
+  margin: auto;
+  margin-top: 5vh;
+  
+}
+
+.CSSgal .slider .txt-sugerencia{
+  color: rgba(255,255,255,0.6);
+  font-family: 'Mermaid-Swash'; 
+  letter-spacing: 1px;
+  text-align: center;
+  margin: auto;
+  margin-top: 1vh;
+}
+
+.CSSgal .slider .txt3{
+  font-size:2rem;
+  text-transform: uppercase; 
+  letter-spacing: 3px;
+  text-shadow: 0 2px 10px rgba(4,24,47,0.3);
+  transform: translateY(-50%);
+  text-align: center;
+  margin: auto;
+  margin-top: 60vh;
+}
+.CSSgal .slider .txt3 span{
+  font-family: 'Mermaid-Swash'; 
+}
+.CSSgal .slider .sub3{
+  color: #88FFF1;
+  font-family: 'Mermaid-Swash';
+  letter-spacing: 1px;
+  text-shadow: 0 2px 10px rgba(4,24,47,0.3);
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 1.2rem;
+  margin: auto;
+  margin-top: 1vh;
+}
+.CSSgal .slider .btn-confirm{
+  width: 200px;
+  display: inline-flex;
+  justify-content:flex-start;
+  align-items: center;
+  height: 40px;
+  background:rgba(125, 190, 255, 0.1) ;
+  border-radius: 30px;
+  box-shadow: 3px 3px 15px rgba(0,0,0,0.3);
+  margin: auto;
+  margin-top: 3vh;
+  
+}
+.CSSgal .slider .btn-confirm img{width:60px;}
+.CSSgal .slider .btn-confirm p{
+  text-align: center;
+  width: 80%;
+  text-transform: uppercase;
+  font-size: 25px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.conteiner-slider {
   max-width: 480px;
   width:100%;
   height:100vh;
@@ -385,7 +739,7 @@ input:checked+label+.content-inner~.content-inner {
 input:not(:checked)+label+.content-inner {
   transition: 0;
 }
-
+*/
 
 
 

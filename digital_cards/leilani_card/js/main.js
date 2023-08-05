@@ -21,9 +21,9 @@ audioElements.forEach(audioElement => {
 
 
 $(function(){
- $(document).bind("contextmenu",function(e){
-      return false;
-  });
+$(document).bind("contextmenu",function(e){
+    return false;
+ });
 });
 
 AOS.init({
