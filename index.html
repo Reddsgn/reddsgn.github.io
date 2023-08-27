@@ -3,26 +3,176 @@
 
 <head>
   <meta charset="utf-8">
-  <title>RedDsgn | Coming soon</title>
+  <title>RedDsgn | Imagine and do it.</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="icon" href="./favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
-    body{ width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; overflow: hidden;}
-    #vector-bg{ mix-blend-mode: multiply; opacity: .5; position: absolute; z-index: 1;}
-    .text{font-size: 95px;font-family: 'Passion One', cursive; font-weight: 700; text-transform: uppercase; text-align: center; line-height: 70px; color:#F6933A ; margin-bottom: 55px;}
-  </style>
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
 
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mediaqueries.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-  
- <img src="vector.png" id="vector-bg">
- <p class="text">Under <br><span> Construction </span></p>
- <div class="warning-line"><img src="warning_line.png"></div>
+  <div id="cursor"></div>
+  <header class="menu">
+    <div class="logo">
+      <img src="img/reddsgn_signo.svg" alt="">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+    </nav>
+</header>
+        <section class="parallax" id="inicio" >         
+          <div class="parallax-inner" id="section-0" data-aos="fade-in">
+            <figure></figure>
+            <div id="symbol"> 
+              <?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 245 159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-miterlimit:10;"><path d="M181.925,79.755c0,-8.967 -7.281,-16.247 -16.25,-16.247c-8.969,-0 -16.25,7.28 -16.25,16.247c0,8.968 7.281,16.248 16.25,16.248c8.969,0 16.25,-7.28 16.25,-16.248Z"/><path d="M138.383,79.06c-0,-8.968 -7.282,-16.248 -16.25,-16.248c-8.969,-0 -16.25,7.28 -16.25,16.248c-0,8.967 7.281,16.248 16.25,16.248c8.968,-0 16.25,-7.281 16.25,-16.248Z" /><path d="M95.312,79.06c-0,-8.968 -7.282,-16.248 -16.25,-16.248c-8.969,-0 -16.25,7.28 -16.25,16.248c-0,8.967 7.281,16.248 16.25,16.248c8.968,-0 16.25,-7.281 16.25,-16.248Z" /></svg> 
+            </div>
+            <div class="logotipo">
+                <?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="svg_shadow" width="100%" height="100%" viewBox="0 0 706 369" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-miterlimit:10;"><path d="M192.51,154.086c-4.254,-2.746 -9.254,-5.121 -15.004,-7.125c-5.75,-1.996 -12.129,-3 -19.121,-3c-7.5,-0 -14.437,1.129 -20.817,3.379c-6.375,2.246 -11.941,5.942 -16.683,11.058c-4.754,5.13 -8.5,11.625 -11.254,19.505c-2.754,7.87 -4.125,17.433 -4.125,28.687c-0,21 4.937,36.25 14.817,45.746c9.87,9.504 23.062,14.25 39.562,14.25c7.5,-0 13.808,-0.804 18.938,-2.438c5.116,-1.625 9.683,-3.558 13.687,-5.808l0,-104.254Zm-39,-41.621c7.496,0 14.558,0.813 21.188,2.438c6.616,1.625 12.433,3.687 17.433,6.183l-0,-71.25c1.746,-0.496 4.25,-1.125 7.504,-1.875c3.242,-0.746 6.746,-1.121 10.496,-1.121c7.25,0 12.625,1.375 16.129,4.121c3.496,2.754 5.246,7.379 5.246,13.875l-0,196.5c-0,5.25 -1.121,9.562 -3.371,12.942c-2.25,3.37 -5.754,6.558 -10.504,9.562c-5.754,3.746 -13.563,7.125 -23.438,10.121c-9.879,3 -21.187,4.5 -33.933,4.5c-14.25,-0 -27.254,-1.813 -39.004,-5.433c-11.754,-3.621 -21.746,-9.25 -30,-16.88c-8.246,-7.62 -14.625,-17.25 -19.125,-28.875c-4.5,-11.625 -6.75,-25.312 -6.75,-41.058c-0,-16.25 2.312,-30.312 6.937,-42.187c4.625,-11.875 10.934,-21.625 18.938,-29.255c8,-7.62 17.312,-13.245 27.937,-16.875c10.625,-3.62 22.063,-5.433 34.317,-5.433" style="fill:#fff;fill-rule:nonzero;"/><path d="M377.382,244.837c-0,16.754 -6.25,29.879 -18.75,39.375c-12.504,9.496 -30.629,14.25 -54.375,14.25c-9.75,0 -18.75,-0.75 -27,-2.25c-8.25,-1.5 -15.317,-3.621 -21.188,-6.375c-5.875,-2.746 -10.441,-6 -13.683,-9.75c-3.258,-3.746 -4.879,-7.875 -4.879,-12.375c-0,-3.75 0.937,-7.246 2.812,-10.5c1.875,-3.246 4.438,-5.867 7.688,-7.875c6.996,4.5 15,8.625 24,12.375c9,3.75 19.5,5.625 31.504,5.625c11.246,0 19.871,-1.929 25.871,-5.812c6,-3.875 9,-9.434 9,-16.688c-0,-6.246 -2.059,-11.25 -6.188,-15c-4.125,-3.75 -10.187,-6.617 -18.187,-8.625l-25.5,-6.75c-17.004,-4.5 -29.5,-10.625 -37.5,-18.375c-8.004,-7.746 -12,-18.375 -12,-31.875c-0,-7.25 1.5,-14.062 4.5,-20.437c3,-6.375 7.433,-11.871 13.312,-16.5c5.875,-4.621 13.184,-8.25 21.938,-10.875c8.75,-2.625 18.75,-3.938 30,-3.938c9,0 17.183,0.692 24.562,2.067c7.371,1.375 13.75,3.25 19.125,5.621c5.375,2.379 9.567,5.316 12.563,8.812c3,3.504 4.5,7.254 4.5,11.25c-0,4.004 -0.879,7.442 -2.625,10.313c-1.75,2.879 -4,5.191 -6.75,6.937c-4.5,-2.75 -11.192,-5.75 -20.063,-9c-8.875,-3.246 -18.437,-4.875 -28.687,-4.875c-10.5,0 -18.75,1.817 -24.75,5.438c-6,3.629 -8.996,8.691 -8.996,15.187c-0,5.004 1.683,9.129 5.058,12.375c3.375,3.25 9.188,5.875 17.438,7.875l21.75,5.625c18.996,5.008 33.004,11.754 42,20.25c9,8.504 13.5,20.004 13.5,34.5" style="fill:#fff;fill-rule:nonzero;"/><path d="M459.505,256.463c8.495,-0 15.625,-1.25 21.379,-3.75c5.746,-2.496 10.621,-5.496 14.625,-9l-0,-90.75c-3.754,-2.25 -8.384,-4.313 -13.875,-6.188c-5.504,-1.875 -12.004,-2.812 -19.5,-2.812c-15.259,-0 -27.509,4.629 -36.75,13.875c-9.254,9.254 -13.875,23.25 -13.875,42c-0,10.254 1.246,19.004 3.75,26.25c2.491,7.254 5.866,13.125 10.125,17.625c4.246,4.504 9.308,7.754 15.183,9.75c5.867,2.004 12.192,3 18.938,3m36.375,20.25c-4.75,3 -10.563,5.504 -17.438,7.5c-6.875,2.004 -15.062,3 -24.562,3c-11,-0 -21.442,-1.559 -31.313,-4.688c-9.879,-3.121 -18.562,-8.121 -26.058,-15c-7.5,-6.871 -13.442,-15.808 -17.813,-26.812c-4.379,-11 -6.562,-24.496 -6.562,-40.5c-0,-14.496 2.183,-27.188 6.562,-38.063c4.371,-10.875 10.496,-20 18.375,-27.375c7.871,-7.371 17.246,-12.937 28.125,-16.687c10.871,-3.75 22.934,-5.625 36.179,-5.625c12.25,-0 23.567,1.562 33.946,4.687c10.367,3.129 18.804,6.813 25.309,11.063c4.245,2.754 7.558,5.879 9.937,9.375c2.375,3.504 3.563,7.75 3.563,12.75l-0,147.75c-0,12.495 -2.188,23.25 -6.559,32.25c-4.379,9 -10.383,16.316 -18,21.937c-7.633,5.625 -16.691,9.75 -27.191,12.375c-10.496,2.625 -21.75,3.938 -33.746,3.938c-12.754,-0 -23.759,-1.255 -33,-3.75c-9.254,-2.505 -16.009,-5 -20.254,-7.5c-7.75,-4.755 -11.621,-11.005 -11.621,-18.75c-0,-4.255 0.871,-7.817 2.625,-10.684c1.746,-2.879 3.991,-5.196 6.75,-6.941c5.746,3.995 13.371,7.625 22.875,10.875c9.496,3.245 19.621,4.875 30.371,4.875c15.754,-0 27.937,-3.188 36.562,-9.563c8.625,-6.371 12.938,-16.687 12.938,-30.937l-0,-19.5Z" style="fill:#fff;fill-rule:nonzero;"/><path d="M656.192,152.589c-6.875,-5.75 -16.192,-8.625 -27.937,-8.625c-8.755,-0 -16.567,1.125 -23.438,3.375c-6.875,2.246 -12.812,4.75 -17.808,7.5l-0,137.621c-1.754,0.754 -4.192,1.437 -7.313,2.062c-3.129,0.625 -6.566,0.942 -10.316,0.942c-7.255,-0 -12.625,-1.379 -16.125,-4.125c-3.505,-2.746 -5.25,-7.375 -5.25,-13.875l-0,-123.75c-0,-5.746 1.129,-10.375 3.375,-13.879c2.25,-3.492 6,-6.992 11.25,-10.496c7,-4.25 16.125,-8.121 27.375,-11.625c11.25,-3.5 24,-5.25 38.25,-5.25c24.245,-0 43.25,5.437 57.004,16.312c13.741,10.875 20.621,27.317 20.621,49.313l-0,114.371c-1.75,0.754 -4.255,1.437 -7.5,2.062c-3.25,0.625 -6.75,0.942 -10.5,0.942c-7.255,-0 -12.625,-1.379 -16.125,-4.125c-3.5,-2.746 -5.246,-7.375 -5.246,-13.875l-0,-97.879c-0,-12.242 -3.446,-21.242 -10.317,-26.996" style="fill:#fff;fill-rule:nonzero;"/><path d="M181.925,79.755c-0,-8.967 -7.282,-16.247 -16.25,-16.247c-8.969,-0 -16.25,7.28 -16.25,16.247c-0,8.968 7.281,16.248 16.25,16.248c8.968,0 16.25,-7.28 16.25,-16.248Z" style="fill:none;stroke:#e52121;stroke-width:12.5px;"/><path d="M138.382,79.06c0,-8.968 -7.281,-16.248 -16.25,-16.248c-8.968,-0 -16.25,7.28 -16.25,16.248c0,8.967 7.282,16.248 16.25,16.248c8.969,-0 16.25,-7.281 16.25,-16.248Z" style="fill:none;stroke:#e52121;stroke-width:12.5px;"/><path d="M95.312,79.06c-0,-8.968 -7.282,-16.248 -16.25,-16.248c-8.969,-0 -16.25,7.28 -16.25,16.248c-0,8.967 7.281,16.248 16.25,16.248c8.968,-0 16.25,-7.281 16.25,-16.248Z" style="fill:none;stroke:#e52121;stroke-width:12.5px;"/></svg>
+            </div>
+            <div id="main-title" >
+                  <p id="txt-m1"data-aos="fade-right"> Making</p>
+                  <div class="wrapper invert" data-aos="fade-left" data-aos-delay="500">
+                    <span data-text="Blowing"></span>
+                    <span data-text="Minds"></span>
+                  </div>
+                  <p id="txt-m2" data-aos="fade-right" data-aos-delay="700">Since 2014</p>
+            </div>
+            <div class="scrolling"> 
+                 <p> Scroll </p> 
+                <div class="arrow">
+                  <span class="arrow-line"></span>
+                </div>
+                
+            </div>
+          </div>
+          <div class="bg-main"></div>
+        </section>
+
+        <section class="parallax" id="about">
+          <div class="parallax-inner" id="section-1">
+            <figure></figure>
+            <div class="content-container-about content-theme-white">
+              <div class="content-inner-about">
+                <div class="content-texts">
+                  <h2 class="title-back">I'm</h2>
+                  <p class="info" data-aos="fade-left" data-aos-delay="1400">A Designer and visual communicator with 
+                    <span class="txt-dest">selective skills</span> to 
+                    produce digital experiences with high quality visual interfaces and user experience.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="parallax" id="work">
+          <div class="parallax-inner" id="section-2">
+            <figure></figure>
+            <div class="content-container-about content-theme-dark">
+              <div class="content-inner-about">
+                <div class="content-texts">
+                  <h2 class="title-back">What <br>I do</h2>
+                  <ul class="experience">
+                     <li><p data-aos="fade-left" data-aos-delay="1900">UX-UI</p></li>
+                     <li><p data-aos="fade-left" data-aos-delay="2000">Graphics</p></li>
+                     <li><p data-aos="fade-left" data-aos-delay="2100">Social media</p></li>
+                     <li><p data-aos="fade-left" data-aos-delay="2200">Branding</p></li>
+                     <li><p data-aos="fade-left" data-aos-delay="2300">Visuals</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+        
+        <section class="parallax" id="portfolio">
+          <div class="parallax-inner" id="section-3">
+            <figure></figure>
+             <div id="projects">
+               
+              <div class="play-btn" onclick="document.getElementById('vid01').style.display='block'">
+                <svg width="139" height="139" viewBox="0 0 139 139" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.72532 47.5C4.31215 54.3861 3 61.7898 3 69.5C3 106.227 32.7731 136 69.5 136C84.7411 136 98.7847 130.873 110 122.249M11.7526 36.5C23.2148 16.4853 44.7826 3 69.5 3C106.227 3 136 32.7731 136 69.5C136 85.4285 130.4 100.049 121.061 111.5" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M69.5 46.8494L55.25 38.6221C51.9167 36.6976 47.75 39.1032 47.75 42.9522V94.0478C47.75 97.8968 51.9167 100.302 55.25 98.3779L62.5 94.1921M81 53.4889L99.5 64.1699C102.833 66.0944 102.833 70.9056 99.5 72.8301L73 88.1299" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </div>
+              <video  muted autoplay loop>
+                <source src="img/video/projects.mp4" type="video/mp4">
+                Tu navegador no es compatible con videos HTML5
+              </video>
+                  
+                  <div id="vid01" class="modal" style="text-align: center;">
+                    <div class="close-btn">
+                      <svg width="139" height="139" viewBox="0 0 139 139" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.72532 47.5C4.31215 54.3861 3 61.7898 3 69.5C3 106.227 32.7731 136 69.5 136C84.7411 136 98.7847 130.873 110 122.249M11.7526 36.5C23.2148 16.4853 44.7826 3 69.5 3C106.227 3 136 32.7731 136 69.5C136 85.4285 130.4 100.049 121.061 111.5" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path class="inner-close" fill-rule="evenodd" clip-rule="evenodd" d="M42.5476 42.9163C40.8444 41.5093 38.3232 41.7494 36.9162 43.4526C35.5093 45.1557 35.7494 47.677 37.4525 49.084L48.9525 58.584C50.6557 59.9909 53.1769 59.7508 54.5839 58.0476C55.9909 56.3445 55.7507 53.8232 54.0476 52.4163L42.5476 42.9163ZM63.4887 60.3686C61.7592 58.9941 59.2429 59.282 57.8685 61.0115C56.4941 62.741 56.7819 65.2572 58.5114 66.6317L62.873 70.0978L37.0584 90.2434C35.3169 91.6026 35.0068 94.1162 36.3659 95.8577C37.7251 97.5993 40.2387 97.9094 41.9802 96.5502L69.3156 75.2178L80.5322 84.1317C82.2617 85.5061 84.778 85.2183 86.1524 83.4888C87.5269 81.7593 87.239 79.243 85.5095 77.8686L75.8032 70.1549L101.942 49.7566C103.683 48.3975 103.993 45.8839 102.634 44.1423C101.275 42.4008 98.7613 42.0907 97.0197 43.4498L69.3606 65.0349L63.4887 60.3686ZM93.8655 85.2745C92.0841 83.9681 89.5808 84.3532 88.2744 86.1347C86.968 87.9161 87.3531 90.4193 89.1346 91.7257L96.6346 97.2257C98.4161 98.5321 100.919 98.147 102.226 96.3656C103.532 94.5841 103.147 92.0809 101.366 90.7745L93.8655 85.2745Z" fill="white"/>
+                        </svg>                        
+                    </div>
+                    <video id="reel" controls>
+                      <source src="img/video/projects.mp4" type="video/mp4">
+                      Tu navegador no es compatible con videos HTML5
+                    </video>
+                  </div>
+             </div>
+          </div>
+        </section>
+
+        <section class="parallax" id="motto">
+          <div class="parallax-inner" id="section-4">
+            <figure></figure>
+            <p class="subtitle" data-aos="fade-down">My Motto</p>
+            <div class="wrapper invert"  data-aos="fade-left" data-aos-delay="3200">
+              <span data-text="Imagination"></span>
+              <span data-text="has no limit"></span>
+            </div>
+          </div>
+        </section>
+
+
+        <footer class="content-footer" id="connect">
+          <div class="content-inner">
+                <div class="inner-inf">
+                  <div class="connect-inf">
+                    <p class="sub"> Connect</p>
+                    <a href="https://www.facebook.com/reddsgn" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/reddsgn" target="_blank">Instagram</a>
+                  </div>
+                  <div class="ilust">
+                    <img src="img/ilustration.png" alt="ilustration"  data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="90"
+                    data-aos-offset="0">
+                  </div>
+                </div>
+                <p class="copy">©2023 reddsgn. All rights reserved</p>
+          </div>
+        </footer>
+
+
+  <script src="js/vendor/jquery-3.7.0.min.js"></script>
+  <script src="js/vendor/modernizr-3.12.0.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/app.js"></script>
+ 
 
 </body>
 
