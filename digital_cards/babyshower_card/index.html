@@ -1,0 +1,106 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Birthday Interactive Card</title>
+  <meta name="description" content="es">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+
+  <audio id="sonido_btn" src="./img/confirm.mp3" autostart="false"></audio>
+  <audio src="./img/neneconsentido_ins.mp3" autoplay loop></audio>
+</head>
+
+<body>
+
+
+  <div class="CSSgal">
+
+    <!-- Don't wrap targets in parent -->
+    <s id="s1"></s> 
+    <s id="s2"></s>
+    <s id="s3"></s>
+    <s id="s4"></s>
+  
+    <div class="slider">
+      <div id="one">
+        <!--<h2 data-aos="fade-zoom-in" data-aos-delay="150" >Acompáñame a celebrar mi increíble cumpleaños</h2>-->
+      </div>
+      <div id="two">
+        <p class="txt-event" data-aos="fade-down" data-aos-delay="350" >Baby <br><span class="number">Shower</span></p>
+        <p class="txt2" data-aos="fade-zoom-in" data-aos-delay="550" > Te invitamos a celebrar con nosotros la llegada de nuestra hermosa bebita.</p>
+      </div>
+      <div id="three">
+        <a  href="https://maps.app.goo.gl/BUiFYm5QfgwbFxat6" target="_blank" class="content-location" data-aos="fade-zoom-in" data-aos-delay="600">
+          <img src="img/location_baby.svg" alt="icono ubicacion">
+          <!--<p class="place">Increibowl</p>-->
+          <p class="location">Linares #202 
+            <br>
+            Col. Felipe Carrillo Puerto, 
+            <br>
+            Cd. Madero</p>
+          </a>
+          <p class="date" data-aos="fade-zoom-in" data-aos-delay="700">20 <br><span> Enero</span></p>
+          <!--<p class="hour" data-aos="fade-down" data-aos-delay="800"> 17:00 Hrs. </p>-->
+          <p class="txt-sugerencia" data-aos="fade-left" data-aos-delay="950">Dinámica: Mameluco de niña.</p>
+      </div>
+      <div id="four">
+        <p class="txt3" data-aos="fade-zoom-in" data-aos-delay="1000"> <span>Te</span> esperamos</p>
+        <p class="sub3" data-aos="fade-down" data-aos-delay="1350"> Favor de confirmar asistencia </p>
+        <a class="btn-confirm" href="https://wa.me/528335320730/?text=Confirmo%20mi%20asistencia%20al%20Baby%20shower%20de%20Dorian." target="_blank"  onclick="play('sonido_btn')">
+          <img src="img/verified_icon.png" alt="icon-check">
+          <p>Asistiré</p>
+        </a>
+      </div>
+    </div>
+    
+    <div class="prevNext">
+      <div><a href="#s4"></a><a href="#s2"></a></div>
+      <div><a href="#s1"></a><a href="#s3"></a></div>
+      <div><a href="#s2"></a><a href="#s4"></a></div>
+      <div><a href="#s3"></a><a href="#s1"></a></div>
+    </div>
+  
+    <div class="bullets">
+      <a href="#s1"></a>
+      <a href="#s2"></a>
+      <a href="#s3"></a>
+      <a href="#s4"></a>
+    </div>
+  
+  </div>
+
+
+
+
+
+
+
+
+
+
+    <!--<div class="contenedor-card ocean_bg">
+            <div class="main-title" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+            data-aos-offset="0"><img src="img/title.png" alt="titulo"></div>
+            <div id="img_siren"><img src="img/img_s1.png" alt="Ariel"></div>
+            <h1 class="txt-invite" data-aos="fade-left" data-aos-delay="350" data-aos-easing="ease-in-back">Acompáñame a celebrar mi increíble cumpleaños</h1>
+            <a class="btn_continue" href="./invite.html" target="_self"  onclick="play('sonido_btn')">
+              <img src="img/btn_continue.png" alt="continuar"></a>
+            <div class="overlay"></div>
+            <div class="mini-overlay"></div>
+    </div>-->
+   
+  <script src="js/vendor/modernizr-3.12.0.min.js"></script>
+  <script src="js/vendor/jquery-3.7.0.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
