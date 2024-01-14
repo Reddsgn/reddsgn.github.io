@@ -21,11 +21,11 @@ audioElements.forEach(audioElement => {
 }
 
 
-//$(function(){
-//$(document).bind("contextmenu",function(e){
- //   return false;
-// });
-//});
+$(function(){
+$(document).bind("contextmenu",function(e){
+   return false;
+ });
+});
 
 AOS.init({
   duration: 1200,
