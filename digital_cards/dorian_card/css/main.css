@@ -344,7 +344,7 @@ http://stackoverflow.com/a/34696029/383904
 .CSSgal .slider .txt-event .number{ font-size: 4rem;}
 
 .CSSgal .slider .content-location{
-  width: 55%;
+  width: 65%;
   margin: auto;
 	margin-top: 10vh;
   text-align: left;
@@ -374,13 +374,12 @@ http://stackoverflow.com/a/34696029/383904
   text-align: center;
   width: 80%;
   font-family: 'Yellowtail', cursive;
-  font-size:17rem;
+  font-size:16rem;
   line-height: 70px;
   text-shadow: 0 6px 10px rgba(220,155,147,0.8);
   transform: translateY(-50%);
   margin: auto;
-  margin-top: 22vh;
-  margin-bottom: 2rem;
+  margin-top: 10vh;
 }
 .CSSgal .slider .date span{font-size: 4rem;}
 
