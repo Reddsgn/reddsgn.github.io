@@ -23,7 +23,7 @@ audioElements.forEach(audioElement => {
 
 $(function(){
 $(document).bind("contextmenu",function(e){
-   return false;
+  return false;
  });
 });
 
