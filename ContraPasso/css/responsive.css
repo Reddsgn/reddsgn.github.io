@@ -83,7 +83,7 @@
     bottom: 3rem;
   }
   #events .svg-btn{
-    bottom: 6rem;
+    bottom: 10rem;
   }
   .slider .items-group .item .bg {
     background-repeat: no-repeat;
@@ -92,7 +92,8 @@
     background-repeat: no-repeat;
   }
   .slider .items-group .item .block {
-    max-height: 350px;
+    max-height: 450px;
+    top: 10%;
   }
   .slider .items-group .item .block .text {
     justify-content: flex-start;
@@ -256,6 +257,7 @@
   }
   .slider .items-group .item .block {
     max-height: 450px;
+    top: 25%;
   }
   .slider .items-group .item .block .text {
     justify-content: flex-start;
@@ -410,7 +412,7 @@
     bottom: 4rem;
   }
   #events .svg-btn{
-    bottom: 3rem;
+    bottom: 6rem;
   }
   .slider .items-group .item .bg {
     background-repeat:inherit;
@@ -419,7 +421,8 @@
     background-repeat: inherit;
   }
   .slider .items-group .item .block {
-    max-height: 350px;
+    max-height: 450px;
+    top: 13%;
   }
   .slider .items-group .item .block .text {
     justify-content: center;
@@ -583,6 +586,7 @@
   }
   .slider .items-group .item .block {
     max-height: 450px;
+    top: 20%;
   }
   .slider .items-group .item .block .text {
     justify-content: center;

@@ -554,6 +554,7 @@ stroke: #FF9290;
   background-attachment: fixed!important;
   box-shadow: none;
   z-index: 3;
+  position: absolute;
 }
 .slider .items-group .item .block .circleLight {
   top: 0px;

@@ -29,10 +29,10 @@ $('#contacto-footer').click(function(){
 });
 
 
-//Menú
-//$('.menu-link').click(function(){
- // $('.sidebar').css("display","none");
-//});
+//Menú close 
+$('.menu-link').click(function(){
+  $('.input-toggler').prop('checked', false);
+});
 
 //Eventos slider
 var mouse = {
