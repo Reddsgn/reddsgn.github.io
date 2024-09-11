@@ -640,7 +640,7 @@ stroke: #FF9290;
 */
 
 #merch{
-  background: url('./img/bg_merch_f.png') no-repeat;
+  background: url('../img/bg_merch_f.png') no-repeat;
   background-size: cover;
   background-position:center;
   height: 100vh;
