@@ -1,0 +1,341 @@
+/*==========================================================================
+    Media Queries for Responsive Design.
+========================================================================= */
+
+/* Smarth phones hasta 280 */
+@media screen and (min-width: 17.5em){
+  /*==========================================================================
+        LOGOTYPE HERO
+    ==========================================================================
+  */
+  #symbol{
+    width: 25%;
+  }
+  /* ==========================================================================
+     MENU SETTINGS
+   ==========================================================================
+  */
+  .menu-link {font-size: 12vmin; line-height: 20vmin;}
+  #flame{
+    display: none;
+  }
+  /* ==========================================================================
+     HERO - FIRST SECTION
+   ==========================================================================
+  */
+  video {
+    transform: translate(-38%, 0);
+  }
+  .containerimagotipo img{
+    width: 80%;
+  }
+  .btn-links{
+    justify-content: center;
+    padding: 1rem 0 3rem 0;
+    flex-direction: column;
+  }
+  .svg-btn {
+  margin-top: 30px;
+  }
+
+  /* ==========================================================================
+     ABOUT - SECOND SECTION
+   ==========================================================================
+  */
+  #about{
+    height: auto;
+  }
+  .info{
+    margin-top: 4rem;
+  }
+  .subtitle{
+    font-size:18px;
+  }
+  .title{
+    font-size: 5.5rem;
+  }
+
+  /* ==========================================================================
+     MUSIC- THIRD SECTION
+   ==========================================================================
+  */
+  #music{
+    height:auto;
+  }
+  #music .row img{
+    transform: translate(-30%,0);
+  }
+  .title-pink{
+    text-align: center;
+  }
+
+  /* ==========================================================================
+     EVENTS- FOUR SECTION
+   ==========================================================================
+  */
+  #events .title{
+    font-size: 4.4rem;
+  }
+  .bottom-inf{
+    text-align: center;
+  }
+  #events .titles-bottom{
+    bottom: 3rem;
+  }
+  #events .svg-btn{
+    bottom: 6rem;
+  }
+  .slider .items-group .item .bg {
+    background-repeat: no-repeat;
+  }
+  .slider .items-group .item .blur {
+    background-repeat: no-repeat;
+  }
+  .slider .items-group .item .block {
+    max-height: 350px;
+  }
+  .slider .items-group .item .block .text {
+    justify-content: flex-start;
+    padding-top: 30px;
+  }
+  .slider .items-group .item .block p {
+    padding: 1rem 0;
+  }
+  .slider .navigations {
+    bottom: 20px;
+  }
+ 
+
+  /* ==========================================================================
+      MERCH- FIFTH SECTION
+    ==========================================================================
+  */
+  #merch .titles-bottom{
+    bottom:6rem;
+  }
+  #merch .title{
+    font-size: 3.8rem;
+  }
+  #merch .svg-btn{
+    bottom: 3rem;
+  }
+
+  /* ==========================================================================
+     GALLERY- SIX SECTION
+   ==========================================================================
+  */
+  .lightbox-modal .carousel-inner {
+    max-width: 100%;
+  }
+
+  /* ==========================================================================
+     FOOTER- SEVEN SECTION
+   ==========================================================================
+  */
+  #social .list{
+    padding: 0;
+  }
+  .copyright{
+    font-size: 12px;
+    padding: 2rem 0;
+  }
+
+  /* ==========================================================================
+     CONTACT- MODAL SECTION
+   ==========================================================================
+  */
+  .titles-top{
+    width: 80%;
+  }
+  .titles-top .title{
+    font-size: 4rem;
+  }
+  .contact-info{
+    width: 80%;
+    padding: 2rem 0;
+  }
+  .subtitle-three{
+    font-size: 2.5rem;
+  }
+  .close-contact{
+    font-size: 2rem;
+    right: 20px;
+  }
+
+}
+ 
+ 
+/* Tablets vertical 530px */
+@media screen and (min-width: 33.125em) {
+    
+}
+
+/* Tablets horizontal 968px */
+@media screen and (min-width: 60em) {
+ 
+}
+ 
+/* Desktops hasta 1280px */
+@media screen and (min-width: 80em){
+      /*==========================================================================
+        LOGOTYPE HERO
+    ==========================================================================
+  */
+  #symbol{
+    width: 10%;
+  }
+  /* ==========================================================================
+     MENU SETTINGS
+   ==========================================================================
+  */
+  .menu-link {font-size: 8vmin; line-height: 10vmin;}
+  #flame{
+    display: inline-flex;
+  }
+  /* ==========================================================================
+     HERO - FIRST SECTION
+   ==========================================================================
+  */
+  video {
+    transform: translate(0, 0);
+  }
+  .containerimagotipo img{
+    width: 55%;
+  }
+  .btn-links{
+    justify-content: space-around;
+    padding: 5rem 0;
+    flex-direction: row;
+  }
+  .svg-btn {
+    margin-top: 0;
+  }
+
+  /* ==========================================================================
+     ABOUT - SECOND SECTION
+   ==========================================================================
+  */
+  #about{
+    height:100vh;
+  }
+  .info{
+    margin-top:0;
+  }
+  .subtitle{
+    font-size:20px;
+  }
+  .title{
+    font-size: 5rem;
+  }
+
+  /* ==========================================================================
+     MUSIC- THIRD SECTION
+   ==========================================================================
+  */
+  #music{
+    height: 100vh;
+  }
+  #music .row img{
+    transform: translate(0,0);
+  }
+  .title-pink{
+    text-align: center;
+  }
+
+  /* ==========================================================================
+     EVENTS- FOUR SECTION
+   ==========================================================================
+  */
+
+  #events .title{
+    font-size:5rem;
+  }
+  .bottom-inf{
+    text-align: center;
+  }
+  #events .titles-bottom{
+    bottom: 6rem;
+  }
+  #events .svg-btn{
+    bottom: 6rem;
+  }
+  .slider .items-group .item .bg {
+    background-repeat:inherit;
+  }
+  .slider .items-group .item .blur {
+    background-repeat: inherit;
+  }
+  .slider .items-group .item .block {
+    max-height: 450px;
+  }
+  .slider .items-group .item .block .text {
+    justify-content: center;
+    padding-top: 0px;
+  }
+  .slider .items-group .item .block p {
+    padding: 2rem 0;
+  }
+  .slider .navigations {
+    bottom: 40px;
+  }
+ 
+
+  /* ==========================================================================
+      MERCH- FIFTH SECTION
+    ==========================================================================
+  */
+  #merch .titles-bottom{
+    bottom:12rem;
+  }
+  #merch .title{
+    font-size: 5rem;
+  }
+  #merch .svg-btn{
+    bottom: 8rem;
+  }
+
+  /* ==========================================================================
+     GALLERY- SIX SECTION
+   ==========================================================================
+  */
+  .lightbox-modal .carousel-inner {
+    max-width: 60%;
+  }
+
+  /* ==========================================================================
+     FOOTER- SEVEN SECTION
+   ==========================================================================
+  */
+  #social .list{
+    padding: 0;
+  }
+  .copyright{
+    font-size: 14px;
+    padding: 3rem 0;
+  }
+
+  /* ==========================================================================
+     CONTACT- MODAL SECTION
+   ==========================================================================
+  */
+  .titles-top{
+    width: 40%;
+  }
+  .titles-top .title{
+    font-size: 6rem;
+  }
+  .contact-info{
+    width: 40%;
+    padding: 5rem 0;
+  }
+  .subtitle-three{
+    font-size: 3rem;
+  }
+  .close-contact{
+    font-size: 3rem;
+    right: 50px;
+  }
+ 
+}
+ 
+ 
