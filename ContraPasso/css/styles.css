@@ -338,7 +338,7 @@ stroke: #FF9290;
   #about{
     background-color: #481717;
   }
-  #about .row img{width: 100%; height: 100%;}
+  #about .image-col{width: 100%; height: 100%;}
   .info{
     display: flex;
     justify-content: center;

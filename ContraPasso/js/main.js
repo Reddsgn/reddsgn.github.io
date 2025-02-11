@@ -48,10 +48,10 @@ block = {
   CY  : mouse.CY
 },
 imags = [
-  "'./img/Estrellas_del_rock_entrevista.jpg'",
+  "'./img/03_prox_event_1.png'",
+  "'./img/04_prox_event_2.png'",
+  "'./img/ultimos_event_posada.png'",
   "'./img/Union_ska_poster_event.png'",
-  "'./img/Batalla_de_bandas_poster_event.png'",
-  "'./img/Curados_d_espanto_poster_event.png'",
 ];
 
 $('.block').on('mousemove', function(e) {
