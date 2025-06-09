@@ -45,6 +45,9 @@
   #about{
     height: auto;
   }
+   #about .image-col{
+    height: 50vh;
+  }
   .info{
     margin-top: 4rem;
   }
@@ -209,6 +212,9 @@
   #about{
     height: auto;
   }
+   #about .image-col{
+    height: 50vh;
+  }
   .info{
     margin-top: 4rem;
   }
@@ -367,11 +373,14 @@
   }
 
   /* ==========================================================================
-     ABOUT - SECOND SECTION
-   ==========================================================================
+    ABOUT - SECOND SECTION
+  ==========================================================================
   */
   #about{
     height:auto;
+  }
+  #about .image-col{
+    height: 100vh;
   }
   .info{
     margin-top:50px;
@@ -382,6 +391,7 @@
   .title{
     font-size: 4rem;
   }
+
 
   /* ==========================================================================
      MUSIC- THIRD SECTION
@@ -536,6 +546,9 @@
   */
   #about{
     height:100vh;
+  }
+   #about .image-col{
+    height: 100vh;
   }
   .info{
     margin-top:0;
