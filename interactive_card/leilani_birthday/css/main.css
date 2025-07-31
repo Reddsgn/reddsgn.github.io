@@ -196,6 +196,10 @@ http://stackoverflow.com/a/34696029/383904
   background: url(../img/bg_4.png) no-repeat top center;
   background-size:cover;
 }
+#five{
+  background: url(../img/bg_5.png) no-repeat top center;
+  background-size:cover;
+}
 
 /* PREV/NEXT, CONTAINERS & ANCHORS */
 
@@ -279,6 +283,9 @@ http://stackoverflow.com/a/34696029/383904
 #s4:target ~ .bullets > *:nth-child(4) {
 	background: #FAB6FF;
 }
+#s5:target ~ .bullets > *:nth-child(5) {
+	background: #FAB6FF;
+}
 
 
 /* PREV/NEXT CONTAINERS VISIBILITY */
@@ -297,6 +304,9 @@ http://stackoverflow.com/a/34696029/383904
 	visibility: visible;
 }
 #s4:target ~ .prevNext > *:nth-child(4) {
+	visibility: visible;
+}
+#s5:target ~ .prevNext > *:nth-child(5) {
 	visibility: visible;
 }
 
@@ -318,6 +328,10 @@ http://stackoverflow.com/a/34696029/383904
 #s4:target ~ .slider {
 	transform: translateX(-300%);
 	-webkit-transform: translateX(-300%);
+}
+#s5:target ~ .slider {
+	transform: translateX(-400%);
+	-webkit-transform: translateX(-400%);
 }
 /* More slides? Add here more rules */
 
@@ -346,6 +360,11 @@ http://stackoverflow.com/a/34696029/383904
 	text-decoration: none;
 }
 
+.presents_image{
+  position: absolute;
+  margin: auto;
+  z-index: 2;
+}
 
 .CSSgal .slider .txt-event{
   position: relative;
@@ -440,6 +459,10 @@ http://stackoverflow.com/a/34696029/383904
   color:#FFF7A4;
 }
 
+.lifesaver_image{
+  position: relative;
+}
+
 .CSSgal .slider .sub3{
   position: relative;
   color: #EF84D2;
@@ -452,9 +475,30 @@ http://stackoverflow.com/a/34696029/383904
   margin: auto;
   margin-top:10px;
 }
+
+
+.arrow_image{
+  height: auto;
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.buttons_container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+
 .CSSgal .slider .btn-confirm{
   position: relative;
-  width: 200px;
+  width: 68%;
+  min-width:200px;
   display: inline-flex;
   justify-content:flex-start;
   align-items: center;
@@ -462,18 +506,17 @@ http://stackoverflow.com/a/34696029/383904
   background:rgba(125, 190, 255, 0.1) ;
   border-radius: 30px;
   box-shadow: 3px 3px 15px rgba(0,0,0,0.3);
-  margin: auto;
-  margin-top: 3vh;
-  
+  margin: 15px auto;
 }
-.CSSgal .slider .btn-confirm img{width:60px;}
 .CSSgal .slider .btn-confirm p{
-  text-align: center;
   width: 80%;
   text-transform: uppercase;
-  font-size: 25px;
   color: #FFF7A4;
   letter-spacing: 2px;
+}
+
+.capi_image{
+  position: relative;
 }
 
 
@@ -496,6 +539,11 @@ Media Queries
     margin-top: 0px;
     letter-spacing: 5px;
   }
+  .presents_image{
+    top:24% ;
+    left: 110%;
+    width: 80%;
+  }
   .CSSgal .slider .txt-event{
 	  margin-top: 85%;
 	  font-size: 2rem;
@@ -511,7 +559,7 @@ Media Queries
   .CSSgal .slider .date{
     font-size:9rem;
     line-height: 60px;
-    margin-top: 13vh;
+    margin-top: 11vh;
   }
   .CSSgal .slider .date span{font-size: 3.5rem;}
 
@@ -522,6 +570,12 @@ Media Queries
   .CSSgal .slider .txt-sugerencia{
     margin-top:5px;
   }
+
+  .lifesaver_image{
+    width: 58%;
+    margin-top:8%;
+  }
+
   #four .title{
     font-size: 8rem;
     line-height: 95px;
@@ -539,6 +593,27 @@ Media Queries
   font-size: 12px;
   margin-top: 20px;
   }
+  #five .title{
+    font-size: 5rem;
+    line-height: 75px;
+    margin-top: 30px;
+  }
+  #five .sub3{
+    font-size: 1rem;
+    margin-top: -10%;
+  }
+  .arrow_image{
+    width: 50%;
+    margin-top: 10px;
+  }
+  .CSSgal .slider .btn-confirm img{width:50px;}
+  .CSSgal .slider .btn-confirm p{
+    font-size: 22px;
+  }
+  .capi_image{
+    width: 55%;
+    margin-top:-2%;
+  }
 }
 
 @media screen and (min-width: 33.125em) {
@@ -554,6 +629,11 @@ Media Queries
     font-size: 14rem;
     margin-top: 0px;
     letter-spacing: 5px;
+  }
+  .presents_image{
+    top:26% ;
+    left: 105%;
+    width: 90%;
   }
   .CSSgal .slider .txt-event{
 	  margin-top: 95%;
@@ -581,6 +661,10 @@ Media Queries
   .CSSgal .slider .txt-sugerencia{
     margin-top:30px;
   }
+  .lifesaver_image{
+    width: 80%;
+    margin-top:13%;
+  }
   #four .title{
     font-size: 13rem;
     line-height: 150px;
@@ -598,28 +682,54 @@ Media Queries
   font-size: 12px;
   margin-top: 20px;
   }
+  #five .title{
+    font-size: 11rem;
+    line-height: 115px;
+    margin-top: 50px;
+  }
+  #five .sub3{
+    font-size: 1rem;
+    margin-top: -17%;
+  }
+  .arrow_image{
+    width: 50%;
+    margin-top: 30px;
+  }
+  .CSSgal .slider .btn-confirm img{width:70px;}
+  .CSSgal .slider .btn-confirm p{
+    font-size: 26px;
+  }
+  .capi_image{
+    width: 65%;
+    margin-top:10%;
+  }
 }
 
 @media screen and (min-width: 60em){
-    .title_home{
+  .title_home{
     width: 80%;
     top: 4%;
   }
   #one h2{
-    margin-top: 60%;
+    margin-top: 30%;
     font-size: 1rem;
   }
   .title{
-    font-size: 13rem;
+    font-size: 10rem;
     margin-top: -5px;
     letter-spacing:0;
   }
+  .presents_image{
+    top:24% ;
+    left: 120%;
+    width: 65%;
+  }
   .CSSgal .slider .txt-event{
 	  margin-top: 63%;
-	  font-size: 1.5rem;
-    line-height:3.5rem;
+	  font-size: 1rem;
+    line-height:2.5rem;
   } 
-  .CSSgal .slider .txt-event .number{ font-size: 6rem;}
+  .CSSgal .slider .txt-event .number{ font-size: 4rem;}
 
   .CSSgal .slider .content-location .place{
     font-size: 20px;
@@ -628,22 +738,26 @@ Media Queries
     font-size: 16px;
   }
   .CSSgal .slider .date{
-    font-size:8rem;
-    line-height: 50px;
+    font-size:5rem;
+    line-height: 40px;
     margin-top: 13vh;
   }
-  .CSSgal .slider .date span{font-size: 3.5rem;}
+  .CSSgal .slider .date span{font-size: 2.5rem;}
 
   .CSSgal .slider .hour{
-    font-size:2.5rem;
+    font-size:2rem;
     margin-top: 3vh;
   }
   .CSSgal .slider .txt-sugerencia{
     margin-top:3vh;
   }
+  .lifesaver_image{
+    width: 60%;
+    margin-top:2%;
+  }
   #four .title{
-    font-size: 8rem;
-    line-height: 130px;
+    font-size: 7rem;
+    line-height: 100px;
     margin-top: 30px;
   }
   .CSSgal .slider .txt3{
@@ -656,7 +770,28 @@ Media Queries
   }
   .CSSgal .slider .recomendacion{
   font-size: 12px;
-  margin-top: 10px;
+  margin-top: 30px;
+  }
+  #five .title{
+    font-size: 7rem;
+    line-height: 100px;
+    margin-top: 30px;
+  }
+  #five .sub3{
+    font-size: 1rem;
+    margin-top: -17%;
+  }
+  .arrow_image{
+    width: 30%;
+    margin-top: 10px;
+  }
+  .CSSgal .slider .btn-confirm img{width:40px;}
+  .CSSgal .slider .btn-confirm p{
+    font-size: 18px;
+  }
+  .capi_image{
+    width: 45%;
+    margin-top:-10%;
   }
 }
 
@@ -674,6 +809,11 @@ Media Queries
     font-size: 15rem;
     margin-top: -5px;
     letter-spacing:0;
+  }
+  .presents_image{
+    top:26% ;
+    left: 110%;
+    width: 85%;
   }
   .CSSgal .slider .txt-event{
 	  margin-top: 75%;
@@ -700,8 +840,14 @@ Media Queries
     margin-top: 3vh;
   }
   .CSSgal .slider .txt-sugerencia{
-    margin-top:3vh;
+    margin-top:30px;
   }
+
+  .lifesaver_image{
+    width: 75%;
+    margin-top:13%;
+  }
+
   #four .title{
     font-size: 11rem;
     line-height: 130px;
@@ -709,15 +855,36 @@ Media Queries
   }
   .CSSgal .slider .txt3{
   font-size:3rem;
-  margin-top: 55%;
+  margin-top: 60%;
   line-height: 50px; 
   }
   .CSSgal .slider .txt3 span{
     font-size: 6rem;
   }
   .CSSgal .slider .recomendacion{
-  font-size: 12px;
-  margin-top: 40px;
+    font-size: 12px;
+    margin-top: 40px;
+  }
+  #five .title{
+    font-size: 9rem;
+    line-height: 95px;
+    margin-top: 50px;
+  }
+  #five .sub3{
+    font-size: 1rem;
+    margin-top: -10%;
+  }
+  .arrow_image{
+    width: 50%;
+    margin-top: 20px;
+  }
+  .CSSgal .slider .btn-confirm img{width:60px;}
+  .CSSgal .slider .btn-confirm p{
+    font-size: 25px;
+  }
+  .capi_image{
+    width: 70%;
+    margin-top:-5%;
   }
 }
 
